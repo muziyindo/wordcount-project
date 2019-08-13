@@ -1,0 +1,13 @@
+<h1>This is html</h1>
+<br>
+<a href="{% url 'about' %}">About Us</a>
+
+<!--
+{{ hithere }} <!--data sent from inside python home function in views module
+-->
+
+<form action="{% url 'count' %}">
+  <textarea rows="10" cols="20" name="fulltext"></textarea>
+  <br>
+  <input type="submit" value="count!" />
+</form>

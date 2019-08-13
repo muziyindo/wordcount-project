@@ -1,0 +1,13 @@
+<h1>There are {{count}} words in your text</h1>
+<a href="{% url 'home' %}">Home</a>
+<h3>content of textarea</h3>
+{{fulltext_}}
+
+<br>
+
+{% for word_, count_ in worddictionary_ %}
+
+  <b>{{word_}}</b> : <b>{{count_}}</b>
+
+
+{% endfor %}

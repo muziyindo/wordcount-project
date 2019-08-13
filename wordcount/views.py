@@ -32,4 +32,4 @@ def count(request):
     return render(request,'count.html',{'fulltext_':fulltext,'count':len(wordlist),'worddictionary_':worddictonary.items()}) #pARSING FULL TEXT TO html page again
 
 def about(request):
-    return render(request,'about.html',{'title':'Welcome To About Page'})
+    return render(request,'about.html',{'title':'Welcome To About Page','content':'Am mueez and am just starting django in python'})
